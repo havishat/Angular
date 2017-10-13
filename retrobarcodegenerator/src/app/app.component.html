@@ -1,0 +1,23 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<style>
+  th{
+    border: 1px solid black;
+    height: 70px;
+    width: 70px;
+  }
+</style>
+<div style="text-align:center">
+  <h1>
+    {{title}}
+  </h1>
+
+</div>
+<table>
+  <tr>
+    <th *ngFor='let i of this.anycolor(colors)' [ngStyle]="{'background-color': i}">{{i}}</th>
+  </tr>
+</table>
+
+
+
+
